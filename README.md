@@ -1,39 +1,15 @@
-# Web 3 Starter kit
+# Metacrafter Contract Audit report
 
-This project is a starter kit for simple web3 projects. I contains a custom deploy script that write the address and abi to `/frontend/src/components/interface.json`. It also contains a simple storage smart contract
+This repo contains the audit report and updated contract for the metacrafters contract.
 
-This is done as a part of **intermediate EVM course** in metacrafters
+The updated contracts are present in the `contracts` folder. The `oldContract.sol` is the once that is being tested and the `newContract.sol` is the updated contract contract.
 
-It also contains a frontend folder made with next js and it uses web3modal, wagmi and viem to communicate with the blockchain
+The root folder of this repo contains the `audit.pdf` which contains the formal audit report of the smart contract along with the recommendations and guidelines.
 
-## hardhat configuration
+## Thanks you for visiting
 
-To run the local node run the following command
+This repo is submitted as a part of an assignment in matacrafters academy. If you are interested in the code then, feel free to reach out to me.
 
-```shell
-npx hardhat node
-```
+## !!! DO NOT USE FOR PRODUCTION !!!
 
-> note that this will create a different set of wallets every single time. So the wallet has to be configured before every use. to get around this use some other test nets
-
-To run the test scripts run the following command
-
-```shell
-npx hardhat test
-```
-
-To run the deploy script in local node
-
-```shell
-npx hardhat run scripts/deploy.ts --network localhost
-```
-
-## frontend configuration
-
-make sure to install the packages with `npm i` before running the frontend
-
-rename the `.env.example` to `.env` and update the variables value.
-
-> get your project id from https://cloud.walletconnect.com/
-
-To update the networks, go to `/frontend/src/app/page.tsx` and update the `chains` array
+ALL THE CONTRACTS IN THIS REPO ARE ONLY FOR TESTING PURPOSES DO NOT DEPLOY THEM TO PRODUCTION UNDER ANY CIRCUMSTANCES
